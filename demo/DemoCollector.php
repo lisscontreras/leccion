@@ -37,7 +37,7 @@ $insertRow = self::$db->insertRow ("Insert INTO public.demo (nombre) VALUES (?)"
 
 function deleteDemo($id) {
 $deleteRow = self::$db->deleteRow
-("DELETE FROM public.demo WHERE id_demo = ?", array($id));
+("DELETE * FROM public.demo WHERE iddemo = ?", array($id));
 
 }
 

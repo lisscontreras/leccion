@@ -26,7 +26,7 @@ $DemoCollectorObj = new DemoCollector();
 echo "<a href = 'insertar.php' >nuevo</a>";
 foreach ($DemoCollectorObj->showDemos() as $c){
 echo "<div>";
-echo "<a href = 'delete.php?id=".$c->getIdDemo()."'> X</a> &nbsp";
+echo "<a href = 'eliminar.php?id=".$c->getIdDemo()."'> X</a> &nbsp";
 echo "<a href = 'perfil.php?id=".$c->getIdDemo()."' >Perfil </a>&nbsp";
 
 echo $c->getNombre(). "&nbsp" . $c->getTipo(). "&nbsp" . $c->getFechaNacimiento();
